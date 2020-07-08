@@ -9,8 +9,17 @@
     <link rel="stylesheet" href="{% static "css/style.css" %}">
 </head>
 <body>
+    <nav class="navbar has-text-white has-background-black-bis" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <!-- navbar items, navbar burger... -->
+
+    <a href="/admin" class="navbar-item"> Админка</a>
+</div>
+</nav>
 <div class="columns is-centered">
+
     <div class="column is-half">
+
          {% block content %}
     </div>
          {% endblock %}
